@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/seatLayoutLowerMain"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/seatLegendLayout"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10.0dip"
+    android:background="@drawable/seat_layout_border"
+    android:paddingBottom="5.0dp"
+    android:paddingEnd="5.0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="RtlSymmetry">
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/driver"
+        android:layout_margin="4dp"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:numColumns="5"
+        android:stretchMode="columnWidth" >
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/gridView1"
+        android:layout_marginEnd="20.0dp"
+        android:layout_marginTop="5.0dp"
+        android:background="@drawable/steering_icon"
+        android:orientation="horizontal" >
+    </RelativeLayout>
+</RelativeLayout>
